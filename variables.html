@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        //----------------variables------------------
+        // var a = "Urmila Maurya";
+        // var a = "hello";
+        // a = "hi";
+        // let a = "Urmila Maurya";
+        // a = "hi";
+        // const a = "Urmila Maurya";
+        // document.write(a);
+
+        //---------------------variables scope-------
+        // if(1==1){
+        //     var a="Urmila Maurya";// global scope 
+        // }
+        // document.write(a);
+
+        // if(1==1){
+        //     let a="Urmila Maurya";// local(Block)  scope 
+        //     document.write(a);
+        // }
+
+        
+        // if(4==4){
+        //     const a="Urmila Maurya";// local(block)  scope 
+        //     document.write(a);
+        // }
+
+        // for(var a=1; a<=5; a++){
+        //     // document.write("Urmila Maurya" + "<br>");
+        // }
+        // document.write("Urmila Maurya");
+       
+
+        // for(let a=1; a<=5; a++){
+        //     document.write(a + "<br>");
+        // }
+
+        // for(const a=1; a<=5; a++){
+        //     document.write(a + "<br>");
+        // }
+      
+        //------------------Template String--------------------
+        // let user = "Urmila Maurya";
+        // let marks="90";
+        // document.write(`Hello "${user}" your Marks is  ${marks} First Division.`);
+
+        let fname= "urmila";
+        let lname= "Maurya";
+        function fullname(fname,lname){
+            return `${fname} ${lname}`;
+        }
+         let result=` Hello ${fullname(fname,lname)}`;
+         document.write(result);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
