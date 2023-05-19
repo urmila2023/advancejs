@@ -179,15 +179,76 @@
 
 
 
+            // class employee{
+            //     constructor(name){
+            //         this.empname=name;
+            //         console.log("Constructor Method");
+            //     }
+            //     info(){
+            //         console.log("Employee Name : " + this.empname);
+            //     }
+            // } 
+            // class manager extends employee{
 
-     
+            // }
+            // let a = new manager("Urmila Maurya");
+            // a.info(); 
 
 
 
+            // class employee{
+            //     constructor(name){
+            //         this.empname = name;
+            //         console.log("Constructor Method");
+            //     }
+            //     info(){
+            //         console.log("Employee Name : " + this.empname);
+            //     }
+            // }
+            // class manager extends employee{
+            //     info(){
+            //         super.info();
+            //         console.log("Manager Name : " + this.empname);
+            //     }
+            // }
 
-     
-    
+            // let a = new manager("Roli Maurya");
+            // a.info();
 
+
+
+            class employee{
+                constructor(name, age, salary){
+                    this.empname = name;
+                    this.empage = age;
+                    this.empsalary = salary;
+                    console.log("Constuctor Method")
+                }
+                info(){
+                    document.write(`<h3>Employee Class</h3>
+                    Name : ${this.empname} <br>
+                    Age : ${this.empage} <br>
+                    Salary : ${this.empsalary} `)
+                }
+            } 
+            class manager extends employee{
+                info(){
+                    super.info();
+                    let ta = 1000;
+                    let pa = 300;
+                    let tsalary = this.empsalary + ta + pa;
+                    document.write(`<h3>Manager Class</h3>
+                    Name : ${this.empname} <br>
+                    Age : ${this.empage} <br>
+                    Salary : ${tsalary} `)
+                }
+            }
+
+            class test extends manager{
+
+            }
+            let a = new test("Urmila Maurya", 22, 20000);
+            a.info();
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
