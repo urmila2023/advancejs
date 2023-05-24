@@ -20,13 +20,204 @@
 
 
 
-        let numbers = [10,20,30];
-        let iter = numbers[Symbol.iterator]();
-        iter.next();
-        console.log(iter.next());
-        console.log(iter.next().value);
-        console.log('Urmila Maurya');
-        console.log(iter.next());
+        // let numbers = [10,20,30];
+        // let iter = numbers[Symbol.iterator]();
+        // iter.next();
+        // console.log(iter.next());
+        // console.log(iter.next().value);
+        // console.log('Urmila Maurya');
+        // console.log(iter.next());
+
+
+
+
+        // // let numbers = [10,20,30];
+        // let str = "Urmila Maurya";
+        // // let iter = numbers[Symbol.iterator]();
+        // let iter = str[Symbol.iterator]();
+        // let result = iter.next();
+        // while(!result.done){
+        //     console.log(result.value);
+        //     result = iter.next();
+        // }
+
+
+
+
+
+        // function numberIterator(arr){
+        //    var nextNum = 0;
+        //    return {
+        //     next(){
+        //         if(nextNum < arr.length){
+        //             return{
+        //                 value :numbers[nextNum++],
+        //                 done : false
+        //             }
+        //         }else{
+        //             return{
+        //                 done:true
+        //             }
+        //         }
+        //     }
+        //    }
+        // }
+
+        // let numbers = [10,20,30,40,50];
+        // let num = numberIterator(numbers);
+        // console.log(num.next());
+        // (num.next());
+        // console.log(num.next().value);
+        // console.log(num.next());
+        // console.log(num.next());
+
+
+
+
+        //generators-------------------------------
+        // function *generatit(){
+        //     console.log('First Message');
+        //     yield 'yield No 1';
+        //     console.log('Second Message');
+        // }
+        // let g = generatit();
+        // // console.log(g);
+        // console.log(g.next());
+        // console.log(g.next());
+
+
+
+
+        // function *generatit(){
+        //     yield 'yield No 1';
+        //     yield 'yield No 2';
+        //     yield 'yield No 3';
+        // }
+        // let g = generatit();
+        // console.log(g.next());
+        // console.log(g.next().value);
+
+
+
+
+        // function *generatit(){
+        //     yield 'yield No 1';
+        //     yield 'yield No 2';
+        //     yield 'yield No 3';
+        // }
+        // let g = generatit();
+        // for(let value of g) {
+        //     console.log(value);
+        // }
+       
+
+
+
+        // function *generatit(){
+        //     let nextNum = 10;
+        //     while(true){
+        //         yield(nextNum++);
+        //     }
+        // }
+        // let g = generatit();
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+
+
+        // function *generatit(){
+        //     let nextNum = 10;
+        //     while(true){
+        //         yield(nextNum++);
+        //     }
+        // }
+        // let g = generatit();
+        // for(let value of g) {
+        //     if(value > 50) break;
+        //     console.log(value);
+        // }
+
+
+
+
+        // function *generatit(){
+        //     let result = (yield);
+        //     console.log(`Result : ${result}`);
+        // }
+        // let g = generatit();
+        // g.next();
+        // g.next(500);
+
+
+
+        // function *generatit(){
+        //     let result = [yield, yield, yield];
+        //     // console.log(`Result : ${result}`);
+        //     console.log(`Result : ${result[1]}`);
+        // }
+        // let g = generatit();
+        // g.next();
+        // g.next(500);
+        // g.next("PHP");
+        // g.next(700);
+
+
+
+
+        
+        // function *generatit(){
+        //     yield 50;
+        //     yield ['a','b'];
+        // }
+        // let g = generatit();
+        // console.log(g.next());
+        // console.log(g.next());
+
+
+
+
+        // function *generatit(){
+        //     yield "a";
+        //     yield "a";
+        //     yield "a";
+        //     yield "a";
+        // }
+        // let g = generatit();
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+
+
+
+
+        // function *generatit(){
+        //     yield "a";
+        //     yield "a";
+        //     yield "a";
+        //     yield "a";
+        // }
+        // let g = generatit();
+        // console.log(g.next().value);
+        // console.log([...g]);
+
+
+
+
+        function *generatit(){
+            yield "a";
+            yield "a";
+            yield "a";
+            yield "a";
+        }
+        let g = generatit();
+        console.log(g.next().value);
+        console.log(g.return('Ending now'));
+
+        
+        
     </script>
 </head>
 <body>
